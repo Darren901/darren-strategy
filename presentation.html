@@ -144,7 +144,7 @@
       <div class="lbl" style="margin-bottom:36px;">開場</div>
       <div class="g2" style="flex:1;gap:36px;align-items:center;">
         <div>
-          <div style="font-family:'Playfair Display',serif;font-size:110px;font-weight:700;color:var(--accent);line-height:1;margin-bottom:10px;">30%</div>
+          <div style="font-family:'Playfair Display',serif;font-size:110px;font-weight:700;color:var(--accent);line-height:1;margin-bottom:10px;">70%</div>
           <h2>的時間，<br>我在寫<br>我已知道答案<br>的程式碼。</h2>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px;">
@@ -186,7 +186,11 @@
           <h3 style="font-size:17px;line-height:1.2;">Gemini<br>CLI</h3>
           <p style="font-size:14px;">免費可用，訂閱後 Gemini 3 Pro <strong>用到飽</strong>，額度最佛心</p>
           <div style="margin-top:auto;padding:9px;background:var(--s2);border-radius:7px;">
-            <p style="font-size:15px;">⚠ 模型偏笨，適合入門試水溫</p>
+            <ul class="bl">
+              <li>模型比較不乖，難跟工作流穩定配合，適合入門試水溫</li>
+              <li>上下文長（100 萬 token），不易爆掉，但容易有幻覺</li>
+              <li>前端設計強，畫面絕絕子</li>
+            </ul>
           </div>
         </div>
 
@@ -196,8 +200,11 @@
           <h3 style="font-size:17px;line-height:1.2;">Codex<br>CLI</h3>
           <p style="font-size:14px;">GPT-5.3-Codex，免費可用</p>
           <div style="margin-top:auto;padding:9px;background:white;border-radius:7px;border:1px solid var(--border);">
-            <p style="font-size:15px;font-weight:500;color:var(--text);margin-bottom:3px;">Code Review 神器</p>
-            <p style="font-size:15px;">Review 結果貼給 Claude，Claude 會乖乖照改 ✓</p>
+            <p style="font-size:13px;font-weight:500;color:var(--text);margin-bottom:6px;">Code Review 神器</p>
+            <ul class="bl">
+              <li>Review 結果貼給 Claude，Claude 會乖乖照改 ✓</li>
+              <li>GPT 5.3 Codex 寫 Code 也很強，但 Claude Code 實在太香</li>
+            </ul>
           </div>
         </div>
 
@@ -207,7 +214,10 @@
           <h3 style="font-size:17px;line-height:1.2;">Open<br>Code</h3>
           <p style="font-size:14px;">功能跟 Claude Code 差不多，支援<strong>各種模型</strong>隨意切換</p>
           <div style="margin-top:auto;padding:9px;background:#FFF8F0;border-radius:7px;border:1px solid #FFD9A8;">
-            <p style="font-size:15px;color:#8B6000;">⚠ Bug 偏多，不建議用邪門歪道登入，帳號會被鎖</p>
+            <ul class="bl">
+              <li style="color:#8B6000;">因為是開源，Bug 偏多</li>
+              <li style="color:#8B6000;">不建議用邪門歪道登入，帳號會被鎖（e.g. Antigravity OAuth）——我就被鎖過</li>
+            </ul>
           </div>
         </div>
       </div>
