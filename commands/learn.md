@@ -31,7 +31,24 @@
 - **NO → 專案** `.claude/skills/learned/[pattern-name].md`
 - **不確定 → 選全域**（全域移到專案比反方向容易）
 
-## Step 4：建立 Skill 檔案
+## Step 4：確認後再建立
+
+完成評分與位置決定後，**先輸出確認表格，等待使用者核准，才能建立任何檔案**：
+
+```
+## 準備儲存以下內容，確認後繼續？
+
+| # | 洞察名稱 | 評分 | 儲存位置 |
+|---|---|---|---|
+| 1 | redis-distributed-lock-lua | 4.8/5 | ~/.claude/skills/learned/ |
+| 2 | db-unique-constraint-retry | 4.6/5 | ~/.claude/skills/learned/ |
+
+請確認（全部 OK / 哪幾個不要 / 全部略過）
+```
+
+使用者確認後，只建立被核准的項目。
+
+**禁止在使用者確認前呼叫 Write 工具建立任何 skill 或 memory 檔案。**
 
 若洞察通過品質門檻，建立 Skill 檔案：
 
